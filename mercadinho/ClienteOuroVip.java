@@ -7,7 +7,7 @@ public class ClienteOuroVip extends ClienteVip {
     }
     
     @Override
-    public double calcularPagamento(double valorDaCompra) {
+    public double calcularPagamento() {
         return valorDaCompra - (0.15 * valorDaCompra);
     }
 }

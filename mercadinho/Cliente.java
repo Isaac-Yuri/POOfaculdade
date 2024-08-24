@@ -7,9 +7,9 @@ public abstract class Cliente {
         this.valorDaCompra = valorDaCompra;
     }
 
-    public abstract double calcularPagamento(double valorDaCompra);
+    public abstract double calcularPagamento();
 
     public double getValorCompra() {
-        return calcularPagamento(valorDaCompra);
+        return valorDaCompra;
     };
 }

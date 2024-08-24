@@ -5,7 +5,7 @@ public class ClienteRegular extends Cliente {
     }
 
     @Override
-    public double calcularPagamento(double valorDaCompra) {
+    public double calcularPagamento() {
         return valorDaCompra;
     }
 }
