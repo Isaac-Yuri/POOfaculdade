@@ -5,7 +5,7 @@ public class Principal {
         CadastroMilitar cadastroMilitar = new CadastroMilitar();
 
         cadastroMilitar.adicionarMilitar(new MilitarAeronautica(1001, "Soldado", 3, 150));
-        cadastroMilitar.adicionarMilitar(new MilitarAeronautica(1002, "Cabo", 1, 80));
+        cadastroMilitar.adicionarMilitar(new MilitarAeronautica(1002, "Cabo", 3, 110));
         cadastroMilitar.adicionarMilitar(new MilitarAeronautica(1003, "Tenente", 5, 200));
         cadastroMilitar.adicionarMilitar(new MilitarExercito(2001, "Soldado", true, true));
         cadastroMilitar.adicionarMilitar(new MilitarExercito(2002, "Cabo", true, false));

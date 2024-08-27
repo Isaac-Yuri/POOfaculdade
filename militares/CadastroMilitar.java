@@ -15,10 +15,11 @@ public class CadastroMilitar {
 
     public void imprimePodeProgredir() {
         for (Militar militar : militares) {
-            System.out.println(
-                    "Militar de matricula " + militar.getMatricula() + " e patente " + militar.getPatente() + " está "
-                            + (militar.podeProgredir() ? "Apto" : "Inapto")
-                            + " para subir de patente.");
+            if (militar.podeProgredir() && !militar.getPatente().equals("Tenente")) {
+                System.out.println(
+                        "Militar de matricula " + militar.getMatricula() + " e patente " + militar.getPatente()
+                                + " está apto para subir de patente.");
+            }
         }
     }
 
@@ -33,4 +34,3 @@ public class CadastroMilitar {
         }
     }
 }
-
