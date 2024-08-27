@@ -15,6 +15,8 @@ public class CadastroMilitar {
 
     public void imprimePodeProgredir() {
         for (Militar militar : militares) {
+            // O polimorfismo ocorre na chamada do método podeProgredir()
+            //          ↓↓↓↓↓↓↓↓↓↓↓↓↓↓
             if (militar.podeProgredir() && !militar.getPatente().equals("Tenente")) {
                 System.out.println(
                         "Militar de matricula " + militar.getMatricula() + " e patente " + militar.getPatente()
@@ -25,6 +27,8 @@ public class CadastroMilitar {
 
     public void realizarProgressao() {
         for (Militar militar : militares) {
+            // O polimorfismo ocorre na chamada do método podeProgredir()
+            //          ↓↓↓↓↓↓↓↓↓↓↓↓↓↓
             if (militar.podeProgredir()) {
                 if (militar.progredirPatente()) {
                     System.out.println("Militar de matricula " + militar.getMatricula() + " subiu de patente e agora é "
